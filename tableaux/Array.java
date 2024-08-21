@@ -88,7 +88,7 @@ public class Array {
 
 
         // Exo 5
-        
+        System.out.println("----------Exo5-------------");
 
         int[] tab = {1,2,3,4,3,5,6,6,2,3,4,8,6,1,1};
         Set<Integer> uniqueVals = new HashSet<>();
@@ -97,25 +97,15 @@ public class Array {
             uniqueVals.add(val); 
         }
         System.out.println("UniqueValues: "+uniqueVals);
+    
         
-
-
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
+    
+
+    
+
+
+
+
 
 }

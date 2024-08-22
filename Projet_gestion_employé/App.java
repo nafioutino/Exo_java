@@ -5,8 +5,7 @@ import java.util.List;
 
 public class App {
 
-    List<Employes> employesList = new ArrayList<Employes>(15);
-
+    ArrayList<Employes> employesList = new ArrayList<Employes>(15);
     // methode pour ajouter un employé
     public void addEmploye(Employes employe) {
         employesList.add(employe);
@@ -14,6 +13,7 @@ public class App {
 
     // methode pour afficher tous les employés
     public void showAllEmployees() {
+        
         for (Employes employee : employesList) {
             System.out.println(employee);
         }
@@ -39,6 +39,7 @@ public class App {
     public static void main(String[] args) {
         App gestion = new App();
         Scanner sc = new Scanner(System.in);
+        
 
         System.out.println("---------------Bienvenue sur notre plateforme de gestion d'employés ! ---------------");
 
@@ -86,6 +87,9 @@ public class App {
                     gestion.removeEmploye(idAsupprimer);
                     break;
                 case 3:
+                    if (gestion.employesList.size() == 0) {
+                        System.out.println("Aucun employé trouvé !, Merci d'en ajouter");
+                    }
                     System.out.println("------------Liste des employés-------------");
                     gestion.showAllEmployees();
                     break;

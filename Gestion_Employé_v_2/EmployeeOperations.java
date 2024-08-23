@@ -1,11 +1,6 @@
 public interface EmployeeOperations {
-
-    public void addEmploye(Employee employe);
-
-    public void showAllEmployees();
-
-    public void removeEmploye(int id);
-
-    public void showEmployeById(int id);
-    
+    void ajouterEmploye(Employee employe);
+    void supprimerEmploye(int id);
+    void afficherTousLesEmployes();
+    void afficherEmployeParId(int id);
 }

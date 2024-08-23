@@ -22,6 +22,11 @@ public class Manager extends Employee {
         
     }
 
+    @Override
+    public void modifierEmployé(int id) {
+        
+    }
+
     
 
 }

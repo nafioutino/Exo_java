@@ -47,4 +47,5 @@ public abstract class Employee {
 
     // Méthode abstraite
     public abstract void afficherDetails();
+    public abstract void  modifierEmployé(int id);
 }

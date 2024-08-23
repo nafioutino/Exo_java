@@ -7,5 +7,7 @@ public interface EmployeeOperations {
     public void removeEmploye(int id);
 
     public void showEmployeById(int id);
+
+    public void updateEmployee(int id);
     
 }
